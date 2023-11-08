@@ -22,7 +22,12 @@
           
           nativeBuildInputs = [ ];
           
-          buildInputs = [ ];
+          buildInputs = [
+            pkg-config
+            glib
+            cairo
+          ];
+
         };
 
       formatter.x86_64-linux = legacyPackages.${system}.nixpkgs-fmt;

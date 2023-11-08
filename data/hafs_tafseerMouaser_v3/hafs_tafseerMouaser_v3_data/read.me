@@ -1,0 +1,29 @@
+-- KFGQPC Tafseer Mouaser Data
+-- Version: 3.0
+-- Date: 2020-12-15
+
+-- Update Date: 2023-01-08
+	- Changin name of ttf font file to (kfgqpc_hafs_uthmanic_script) and (kfgqpc_uthman_taha_naskh) as one piece for compatibility of using in different platforms
+	- Adding Text file to hafs_tafseerMouaser_v3_data folder with tab separated
+
+It includes two folders:
+1- Tafseer Mouaser fonts
+	- It contains Uthmanic Hafs font and Uthman Taha Naskh font
+2- Tafseer Mouaser data
+	- It contains files for developers.
+	
+Columns:
+--------
+1-  id (int):	 			  Auto_increment Number
+2-  jozz (int):		 		  Jozz Number
+3-  page (int):				  Page Number
+4-	sura_no (int):			  Sura Number
+5-  sura_name_en (varchar):	  Sura Name in English
+6-  sura_name_ar (varchar):	  Sura Name in Arabic (kfgqpc_hafs_uthmanic_script ttf font file)
+7-  line_start (int):		  Start Line of Aya
+8-  line_end (int):			  End Line of Aya
+9-  aya_no (int):			  Aya Number
+10- aya_text (text):		  Text of the Aya in kfgqpc_hafs_uthmanic_script ttf font file (Adding Aya mark as Symbol to all files in UthmanicHafs_v2-0 data folder except Excel file to display Aya mark properly)
+11- aya_text_emlaey (text):	  Emlaey Text of the Aya used for search purpose
+12- aya_tafseer (text):	  	  Tafseer Text of the Aya (The Tafseer text in Uthman Taha Naskh font and the Aya in Uthmanic Hafs font)
+							  A tag (<span class = 'aya'>) has been added with the aya attribute to control the font type of the Quranic Aya and distinguish it from the text of the interpretation (Tafseer).	
