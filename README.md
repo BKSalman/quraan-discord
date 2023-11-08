@@ -8,7 +8,7 @@ A simple discord bot for requesting Suar (سور), Ayat (آيات), pages, and t
 
 first of all you need to convert the pdf `arabic-quran.pdf` in the `data` folder by using `pdfimages`:
 ```bash
-pdfimages -png data/arabic-quran.pdf data/arabic-quranimages/
+pdfimages -png data/arabic-quran.pdf data/arabic-quran-images/
 ```
 
 this will extract the mushaf pages images from the pdf
@@ -21,5 +21,5 @@ cargo run --release
 ```
 
 # Sources
-The Mushaf used (`data/arabic-quran-almadinah-almunawwarah-blue.pdf`) is the Al Madinah Al Munawarah (Hafs Narration) Mushaf from King Fahad Glorious Qura'an Printing Complex
+The Mushaf used (`data/arabic-quran.pdf`) is the Al Madinah Al Munawarah (Hafs Narration) Mushaf from King Fahad Glorious Qura'an Printing Complex
 
